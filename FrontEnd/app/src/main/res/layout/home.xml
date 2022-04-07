@@ -79,4 +79,18 @@
         app:layout_constraintStart_toStartOf="@+id/btn2"
         app:layout_constraintTop_toBottomOf="@+id/btn2" />
 
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btn3"
+        android:layout_width="312dp"
+        android:layout_height="146dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/img3"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="292dp"
+        android:layout_marginTop="20dp"
+        app:shapeAppearanceOverlay="@style/roundImage"
+        app:layout_constraintStart_toStartOf="@id/btn2"
+        app:layout_constraintTop_toBottomOf="@+id/btn2"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
