@@ -93,4 +93,23 @@
         app:layout_constraintStart_toStartOf="@id/btn2"
         app:layout_constraintTop_toBottomOf="@+id/btn2"/>
 
+    <TextView
+        android:id="@+id/btn3_text"
+        android:layout_width="124dp"
+        android:layout_height="60dp"
+        android:text="What's Your Goal?"
+        android:layout_marginTop="-70dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/prompt_2"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:alpha=".8"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="241dp"
+        android:background="@drawable/rectangle_1"
+        app:layout_constraintStart_toStartOf="@+id/btn3"
+        app:layout_constraintTop_toBottomOf="@+id/btn3"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
