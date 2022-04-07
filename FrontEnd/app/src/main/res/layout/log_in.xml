@@ -93,4 +93,30 @@
         app:layout_constraintStart_toStartOf="@id/password"
         app:layout_constraintTop_toBottomOf="@id/password" />
 
+    <TextView
+        android:id="@+id/member_text"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/seoulnamsan"
+        android:text="Not a member? "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/seoulnamsan"
+        android:text="@string/signUp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/member_text"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
