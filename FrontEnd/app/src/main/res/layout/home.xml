@@ -23,7 +23,7 @@
         android:layout_height="146dp"
         android:layout_centerInParent="true"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="32dp"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         android:src="@drawable/img1"
@@ -32,7 +32,7 @@
         app:shapeAppearanceOverlay="@style/roundImage" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/btn1_text"
         android:layout_width="124dp"
         android:layout_height="30dp"
         android:text="Reserve"
@@ -42,10 +42,41 @@
         android:fontFamily="@font/prompt_2"
         android:textSize="18dp"
         android:textAlignment="center"
+        android:alpha=".8"
         tools:layout_editor_absoluteX="77dp"
         tools:layout_editor_absoluteY="241dp"
         android:background="@drawable/rectangle_1"
         app:layout_constraintStart_toStartOf="@+id/btn1"
         app:layout_constraintTop_toBottomOf="@+id/btn1"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/btn2"
+        android:layout_width="312dp"
+        android:layout_height="146dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/img2"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="292dp"
+        android:layout_marginTop="20dp"
+        app:shapeAppearanceOverlay="@style/roundImage"
+        app:layout_constraintStart_toStartOf="@id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/btn1"/>
+
+    <TextView
+        android:id="@+id/btn2_text"
+        android:layout_width="124dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="-130dp"
+        android:background="@drawable/rectangle_1"
+        android:fontFamily="@font/prompt_2"
+        android:text="Personal Trainers"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:alpha=".8"
+        app:layout_constraintStart_toStartOf="@+id/btn2"
+        app:layout_constraintTop_toBottomOf="@+id/btn2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
