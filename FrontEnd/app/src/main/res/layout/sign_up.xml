@@ -81,5 +81,33 @@
         app:layout_constraintStart_toEndOf="@+id/fName"
         app:layout_constraintTop_toBottomOf="@+id/last" />
 
+    <TextView
+        android:id="@+id/mobile"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/seoulnamsan"
+        android:text="Mobile Number"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fName" />
+
+    <EditText
+        android:layout_width="255dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:inputType="phone"
+        android:background="@drawable/rectangle_3"
+        android:fontFamily="@font/seoulnamsan"
+        android:hint="Mobile Number"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/mobile" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
