@@ -19,9 +19,9 @@
     <View
         android:id="@+id/view2"
         android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_height="450dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/rectangle_2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo_btn" />
@@ -45,7 +45,7 @@
         android:layout_width="120dp"
         android:layout_height="35dp"
         android:layout_marginStart="22dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/rectangle_3"
         android:hint="First Name"
         android:textAlignment="center"
@@ -96,18 +96,88 @@
         app:layout_constraintTop_toBottomOf="@id/fName" />
 
     <EditText
+        android:id="@+id/editText"
         android:layout_width="255dp"
         android:layout_height="35dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
-        android:inputType="phone"
+        android:layout_marginTop="12dp"
         android:background="@drawable/rectangle_3"
         android:fontFamily="@font/seoulnamsan"
         android:hint="Mobile Number"
+        android:inputType="phone"
         android:textAlignment="center"
         android:textSize="16dp"
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toBottomOf="@+id/mobile" />
 
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/seoulnamsan"
+        android:text="Username"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <EditText
+        android:id="@+id/username_sign"
+        android:layout_width="255dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rectangle_3"
+        android:fontFamily="@font/seoulnamsan"
+        android:textSize="16dp"
+        android:hint="Username"
+        android:textAlignment="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="@id/view2"
+        app:layout_constraintTop_toBottomOf="@id/user"/>
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:textAlignment="textStart"
+        android:textSize="18dp"
+        android:text="Password"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/view2"
+        app:layout_constraintTop_toBottomOf="@id/username_sign"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/password_sign"
+        android:layout_width="255dp"
+        android:layout_height="35dp"
+        android:background="@drawable/rectangle_3"
+        android:inputType="textPassword"
+        android:fontFamily="@font/seoulnamsan"
+        android:textSize="16dp"
+        android:hint="Password"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@id/view2"
+        app:layout_constraintTop_toBottomOf="@id/pass"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"/>
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="92dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rectangle_3"
+        android:fontFamily="@font/seoulnamsan"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="@id/view2"
+        app:layout_constraintTop_toBottomOf="@id/password_sign" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
