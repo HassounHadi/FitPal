@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class goalActivity extends AppCompatActivity {
 
     private Spinner spinner1;
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,12 @@ public class goalActivity extends AppCompatActivity {
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner1.setAdapter(adapter1);
 
-
+        button = (Button) findViewById(R.id.plan);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "You will receive your plan via email between 1 or 3 days." , Toast.LENGTH_LONG).show();
+            }
+        });
     }
 }
