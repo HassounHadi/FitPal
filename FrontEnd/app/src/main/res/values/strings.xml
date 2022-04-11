@@ -20,4 +20,11 @@
         <item>Saturday</item>
         <item>Sunday</item>
     </string-array>
+
+    <string-array name="time">
+        <item>5:00PM to 6:30PM</item>
+        <item>6:30PM to 8:00PM</item>
+        <item>8:00PM to 9:30PM</item>
+        <item>9:30PM to 11:00PM</item>
+    </string-array>
 </resources>
