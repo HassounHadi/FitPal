@@ -19,7 +19,7 @@
     <View
         android:id="@+id/view"
         android:layout_width="225dp"
-        android:layout_height="400dp"
+        android:layout_height="420dp"
         android:background="@drawable/rectangle_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -134,6 +134,18 @@
         android:padding="10dp"
         android:inputType="textEmailAddress"/>
 
-    
+    <Button
+        android:id="@+id/plan"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/rectangle_3"
+        android:fontFamily="@font/seoulnamsan"
+        android:text="Request Plan"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        app:layout_constraintStart_toStartOf="@id/email"
+        app:layout_constraintTop_toBottomOf="@id/email" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
