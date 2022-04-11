@@ -42,7 +42,7 @@ public class logInActivity extends AppCompatActivity {
 
 
 
-    /*    spinner1 = findViewById(R.id.spinner_goal);
+    /*  spinner1 = findViewById(R.id.spinner_goal);
         ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this,R.array.goal, android.R.layout.simple_spinner_item);
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner1.setAdapter(adapter1);*/
