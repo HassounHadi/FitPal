@@ -17,6 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/head"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/seoulnamsan"
@@ -29,6 +30,63 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo_btn"
         android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/coach1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/head"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/coach1"
+        app:shapeAppearanceOverlay="@style/circleImage"/>
+
+    <View
+        android:id="@+id/r1"
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toEndOf="@id/coach1"
+        app:layout_constraintTop_toTopOf="@id/coach1"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rectangle_3"/>
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/r1"
+        app:layout_constraintTop_toTopOf="@id/r1"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Ali Ali:"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/seoulnamsan"
+        />
+
+    <TextView
+        android:id="@+id/g1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/name1"
+        app:layout_constraintTop_toBottomOf="@id/name1"
+        android:layout_marginTop="10dp"
+        android:text="Speciality:"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/seoulnamsan"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        app:layout_constraintStart_toEndOf="@id/g1"
+        app:layout_constraintTop_toTopOf="@id/g1"
+        android:text="Strength training"
+        android:fontFamily="@font/seoulnamsan"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
