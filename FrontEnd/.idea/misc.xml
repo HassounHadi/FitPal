@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/Users/Acer/Desktop/FitPal/FrontEnd/app/src/main/res/drawable/background.xml" value="0.2135" />
         <entry key="..\:/Users/Acer/Desktop/FitPal/FrontEnd/app/src/main/res/drawable/background2.xml" value="0.2135" />
+        <entry key="..\:/Users/Acer/Desktop/FitPal/FrontEnd/app/src/main/res/drawable/ic_launcher_background.xml" value="0.238" />
         <entry key="..\:/Users/Acer/Desktop/FitPal/FrontEnd/app/src/main/res/drawable/rectangle_1.xml" value="0.2135" />
         <entry key="..\:/Users/Acer/Desktop/FitPal/FrontEnd/app/src/main/res/drawable/rectangle_2.xml" value="0.2135" />
         <entry key="..\:/Users/Acer/Desktop/FitPal/FrontEnd/app/src/main/res/drawable/rectangle_3.xml" value="0.2135" />
@@ -19,6 +20,9 @@
         <entry key="..\:/Users/Acer/Desktop/FitPal/FrontEnd/app/src/main/res/layout/plan.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Acer/Desktop/FitPal/FrontEnd/app/src/main/res/layout/reserve.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/Acer/Desktop/FitPal/FrontEnd/app/src/main/res/layout/sign_up.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/Acer/Desktop/FitPal/FrontEnd/app/src/main/res/mipmap-anydpi-v26/appICON.xml" value="0.137" />
+        <entry key="..\:/Users/Acer/Desktop/FitPal/FrontEnd/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.238" />
+        <entry key="..\:/Users/Acer/Desktop/FitPal/FrontEnd/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.238" />
         <entry key="..\:/Users/Acer/Desktop/FitPal/FrontEnd/app/src/main/res/mipmap-anydpi-v26/spinnerArrow.xml" value="0.203" />
         <entry key="..\:/Users/Acer/Desktop/FitPal/FrontEnd/app/src/main/res/mipmap-anydpi-v26/spinnerArrow_round.xml" value="0.203" />
       </map>
