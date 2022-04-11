@@ -32,4 +32,12 @@
         <item>9:30PM to 11:00PM</item>
     </string-array>
 
+    <string-array name="goal">
+        <item>Weight Loss</item>
+        <item>Get Stronger</item>
+        <item>Gain Some Bulk</item>
+        <item>Gymnastics</item>
+        <item>Boxing</item>
+    </string-array>
+
 </resources>

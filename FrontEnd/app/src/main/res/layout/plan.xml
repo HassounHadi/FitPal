@@ -18,7 +18,7 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="250dp"
+        android:layout_width="225dp"
         android:layout_height="400dp"
         android:background="@drawable/rectangle_2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,6 +80,60 @@
         android:inputType="numberDecimal"
         android:hint="Weight"/>
 
+    <TextView
+        android:id="@+id/gtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/weight"
+        app:layout_constraintTop_toBottomOf="@id/weight"
+        android:layout_marginTop="10dp"
+        android:text="Goal"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/seoulnamsan"/>
 
+    <Spinner
+        android:id="@+id/spinner_goal"
+        android:layout_width="175dp"
+        android:layout_height="37.5dp"
+        app:layout_constraintStart_toStartOf="@id/gtext"
+        app:layout_constraintTop_toBottomOf="@id/gtext"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_3"/>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_drop_down_circle_24"
+        app:layout_constraintEnd_toEndOf="@id/spinner_goal"
+        app:layout_constraintTop_toTopOf="@id/spinner_goal"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/etext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Mail"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:fontFamily="@font/seoulnamsan"
+        app:layout_constraintStart_toStartOf="@id/spinner_goal"
+        app:layout_constraintTop_toBottomOf="@id/spinner_goal"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="175dp"
+        android:layout_height="37.5dp"
+        app:layout_constraintStart_toStartOf="@id/etext"
+        app:layout_constraintTop_toBottomOf="@id/etext"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_3"
+        android:hint="e-mail"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"/>
+
+    
 
 </androidx.constraintlayout.widget.ConstraintLayout>
