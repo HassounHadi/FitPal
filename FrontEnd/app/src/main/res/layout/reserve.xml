@@ -40,5 +40,14 @@
         app:layout_constraintTop_toBottomOf="@+id/access_text"
         android:background="@drawable/rectangle_4"/>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_drop_down_circle_24"
+        app:layout_constraintEnd_toEndOf="@id/spinner_access"
+        app:layout_constraintTop_toTopOf="@id/spinner_access"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
