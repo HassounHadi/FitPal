@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitPal">
         <activity
-            android:name=".Home"
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".signUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".logInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
