@@ -54,7 +54,31 @@
         android:inputType="numberDecimal"
         android:hint="Height"/>
 
-    
+    <TextView
+        android:id="@+id/wtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        android:textColor="@color/white"
+        android:fontFamily="@font/seoulnamsan"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/htext"
+        app:layout_constraintTop_toBottomOf="@id/height"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="175dp"
+        android:layout_height="37.5dp"
+        android:background="@drawable/rectangle_3"
+        app:layout_constraintStart_toStartOf="@id/wtext"
+        app:layout_constraintTop_toBottomOf="@id/wtext"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:fontFamily="@font/seoulnamsan"
+        android:inputType="numberDecimal"
+        android:hint="Weight"/>
 
 
 
