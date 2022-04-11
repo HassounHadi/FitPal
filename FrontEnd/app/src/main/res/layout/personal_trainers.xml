@@ -141,4 +141,58 @@
         android:textSize="18dp"
         android:layout_marginLeft="5dp"/>
 
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/coach3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="@id/coach2"
+        app:layout_constraintTop_toBottomOf="@id/coach2"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/coach3"
+        app:shapeAppearanceOverlay="@style/circleImage"/>
+
+    <View
+        android:id="@+id/r3"
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toEndOf="@id/coach3"
+        app:layout_constraintTop_toTopOf="@id/coach3"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rectangle_3"/>
+
+    <TextView
+        android:id="@+id/name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/r3"
+        app:layout_constraintTop_toTopOf="@id/r3"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Antoine Aoun:"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/seoulnamsan" />
+
+    <TextView
+        android:id="@+id/g3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/name3"
+        app:layout_constraintTop_toBottomOf="@id/name3"
+        android:layout_marginTop="10dp"
+        android:text="Speciality:"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/seoulnamsan"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        app:layout_constraintStart_toEndOf="@id/g3"
+        app:layout_constraintTop_toTopOf="@id/g3"
+        android:text="Bodybuilding"
+        android:fontFamily="@font/seoulnamsan"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
