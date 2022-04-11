@@ -3,6 +3,10 @@
 
     <string name="signUp"><u>Sign Up!</u></string>
 
+    <string name="reserve_note">
+        Please note that all time slots before 5:00PM or after 11:00PM do not require a reservation and you can walk in at any time.
+    </string>
+
     <string-array name="access">
         <item>Gym</item>
         <item>Zumba</item>
