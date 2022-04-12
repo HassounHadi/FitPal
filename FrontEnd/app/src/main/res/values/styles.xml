@@ -12,4 +12,8 @@
         <item name="color">@color/white</item>
     </style>
 
+    <style name="colored_checkbox" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">#DDCE49</item>
+    </style>
+
 </resources>
