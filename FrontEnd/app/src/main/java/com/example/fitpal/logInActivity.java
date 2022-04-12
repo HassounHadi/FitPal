@@ -4,9 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -17,6 +22,9 @@ public class logInActivity extends AppCompatActivity {
 
     Button button;
     TextView sign;
+
+    EditText password;
+    CheckBox show;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +48,19 @@ public class logInActivity extends AppCompatActivity {
             }
         });
 
+        password = (EditText) findViewById(R.id.password);
+        show = (CheckBox) findViewById(R.id.showPass);
 
+        show.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b){
+                    password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                } else {
+                    password.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                }
+            }
+        });
 
     /*  spinner1 = findViewById(R.id.spinner_goal);
         ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this,R.array.goal, android.R.layout.simple_spinner_item);
