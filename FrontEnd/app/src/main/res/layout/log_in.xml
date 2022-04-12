@@ -55,6 +55,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo_btn" />
 
+
     <EditText
         android:id="@+id/password"
         android:layout_width="195dp"
@@ -67,6 +68,17 @@
         android:paddingLeft="12dp"
         app:layout_constraintStart_toStartOf="@id/username"
         app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <CheckBox
+        android:id="@+id/showPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintStart_toStartOf="@id/password"
+        android:text="Show Password"
+        android:textColor="@color/white"
+        android:fontFamily="@font/seoulnamsan"
+        android:layout_marginTop="12dp"/>
 
     <TextView
         android:id="@+id/textView"
@@ -86,14 +98,14 @@
         android:layout_width="92dp"
         android:layout_height="40dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="18dp"
         android:text="LogIn"
         android:fontFamily="@font/seoulnamsan"
         android:textSize="17dp"
         android:textAlignment="center"
         android:background="@drawable/rectangle_3"
-        app:layout_constraintStart_toStartOf="@id/password"
-        app:layout_constraintTop_toBottomOf="@id/password" />
+        app:layout_constraintStart_toStartOf="@id/showPass"
+        app:layout_constraintTop_toBottomOf="@id/showPass" />
 
     <TextView
         android:id="@+id/member_text"
