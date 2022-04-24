@@ -64,5 +64,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_pp"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/username"
+        app:layout_constraintTop_toTopOf="@id/username"
+        android:text="Hadi Hassoun"
+        android:fontFamily="@font/seoulnamsan"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="10dp"/>
+
+    
 
 </androidx.constraintlayout.widget.ConstraintLayout>
