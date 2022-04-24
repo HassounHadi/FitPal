@@ -32,4 +32,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/pp"/>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/edit_pp"
+        app:layout_constraintTop_toTopOf="@id/edit_pp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/edit_profile"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
