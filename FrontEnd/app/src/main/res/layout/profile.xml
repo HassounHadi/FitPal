@@ -30,26 +30,39 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pp"/>
+        app:layout_constraintTop_toBottomOf="@id/pp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf="@id/edit_pp"
-        app:layout_constraintTop_toTopOf="@id/edit_pp"
         android:layout_marginRight="5dp"
-        android:src="@drawable/edit_profile"/>
+        android:src="@drawable/edit_profile"
+        app:layout_constraintEnd_toStartOf="@id/edit_pp"
+        app:layout_constraintTop_toTopOf="@id/edit_pp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginLeft="10dp"
         android:fontFamily="@font/seoulnamsan"
         android:text="Username"
         android:textColor="@color/black"
         android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="@id/username"
+        app:layout_constraintTop_toTopOf="@id/username" />
+
+    <View
+        android:id="@+id/username"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/rectangle_3"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edit_pp"/>
+        app:layout_constraintTop_toBottomOf="@+id/edit_pp"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
