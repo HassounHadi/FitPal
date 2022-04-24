@@ -40,4 +40,16 @@
         android:layout_marginRight="5dp"
         android:src="@drawable/edit_profile"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/seoulnamsan"
+        android:text="Username"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_pp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
