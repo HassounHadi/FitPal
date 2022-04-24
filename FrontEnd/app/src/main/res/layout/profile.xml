@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toStartOf="@id/edit_pp"
         app:layout_constraintTop_toTopOf="@id/edit_pp"
-        android:layout_marginRight="10dp"
+        android:layout_marginRight="5dp"
         android:src="@drawable/edit_profile"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
