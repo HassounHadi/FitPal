@@ -12,6 +12,12 @@
         <item name="color">@color/white</item>
     </style>
 
+    <style name="circleImage2" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">100dp</item>
+        <item name="color">@color/white</item>
+    </style>
+
     <style name="colored_checkbox" parent="Theme.AppCompat.Light">
         <item name="colorAccent">#DDCE49</item>
     </style>
