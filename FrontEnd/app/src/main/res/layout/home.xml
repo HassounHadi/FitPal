@@ -116,7 +116,7 @@
         android:id="@+id/viewAccount"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/seoulnamsan"
         android:text="@string/viewAccount"
         android:textColor="@color/white"
