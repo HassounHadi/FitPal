@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitPal">
         <activity
+            android:name=".profilePage"
+            android:exported="false" />
+        <activity
             android:name=".goalActivity"
             android:exported="false" />
         <activity

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".logInActivity"
-    android:background="@drawable/background2">
+    android:background="@drawable/background2"
+    tools:context=".logInActivity">
 
     <ImageView
         android:id="@+id/logo_btn"
@@ -36,33 +36,33 @@
         android:id="@+id/btn1_text"
         android:layout_width="124dp"
         android:layout_height="30dp"
-        android:text="Reserve"
-        android:layout_marginTop="-40dp"
         android:layout_marginLeft="30dp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/prompt_2"
-        android:textSize="18dp"
-        android:textAlignment="center"
+        android:layout_marginTop="-40dp"
         android:alpha=".8"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="241dp"
         android:background="@drawable/rectangle_1"
+        android:fontFamily="@font/prompt_2"
+        android:text="Reserve"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
         app:layout_constraintStart_toStartOf="@+id/btn1"
-        app:layout_constraintTop_toBottomOf="@+id/btn1"/>
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="241dp" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/btn2"
         android:layout_width="312dp"
         android:layout_height="155dp"
+        android:layout_marginTop="20dp"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         android:src="@drawable/img2"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="292dp"
-        android:layout_marginTop="20dp"
-        app:shapeAppearanceOverlay="@style/roundImage"
         app:layout_constraintStart_toStartOf="@id/btn1"
-        app:layout_constraintTop_toBottomOf="@+id/btn1"/>
+        app:layout_constraintTop_toBottomOf="@+id/btn1"
+        app:shapeAppearanceOverlay="@style/roundImage"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="292dp" />
 
     <TextView
         android:id="@+id/btn2_text"
@@ -70,13 +70,13 @@
         android:layout_height="60dp"
         android:layout_marginStart="172dp"
         android:layout_marginTop="-130dp"
+        android:alpha=".8"
         android:background="@drawable/rectangle_1"
         android:fontFamily="@font/prompt_2"
         android:text="Personal Trainers"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="18dp"
-        android:alpha=".8"
         app:layout_constraintStart_toStartOf="@+id/btn2"
         app:layout_constraintTop_toBottomOf="@+id/btn2" />
 
@@ -84,33 +84,55 @@
         android:id="@+id/btn3"
         android:layout_width="312dp"
         android:layout_height="155dp"
+        android:layout_marginTop="20dp"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
         android:src="@drawable/img3"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="292dp"
-        android:layout_marginTop="20dp"
-        app:shapeAppearanceOverlay="@style/roundImage"
         app:layout_constraintStart_toStartOf="@id/btn2"
-        app:layout_constraintTop_toBottomOf="@+id/btn2"/>
+        app:layout_constraintTop_toBottomOf="@+id/btn2"
+        app:shapeAppearanceOverlay="@style/roundImage"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="292dp" />
 
     <TextView
         android:id="@+id/btn3_text"
         android:layout_width="124dp"
         android:layout_height="60dp"
-        android:text="What's Your Goal?"
-        android:layout_marginTop="-70dp"
         android:layout_marginLeft="30dp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/prompt_2"
-        android:textSize="18dp"
-        android:textAlignment="center"
+        android:layout_marginTop="-70dp"
         android:alpha=".8"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="241dp"
         android:background="@drawable/rectangle_1"
+        android:fontFamily="@font/prompt_2"
+        android:text="What's Your Goal?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
         app:layout_constraintStart_toStartOf="@+id/btn3"
-        app:layout_constraintTop_toBottomOf="@+id/btn3"/>
+        app:layout_constraintTop_toBottomOf="@+id/btn3"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <TextView
+        android:id="@+id/viewAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/seoulnamsan"
+        android:text="@string/viewAccount"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn3" />
+
+    <ImageView
+        android:layout_width="21dp"
+        android:layout_height="20dp"
+        android:src="@drawable/view_profile"
+        app:layout_constraintEnd_toStartOf="@id/viewAccount"
+        app:layout_constraintTop_toTopOf="@id/viewAccount"
+        android:layout_marginRight="5dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,6 +14,7 @@ public class homeActivity extends AppCompatActivity {
     TextView reserve;
     TextView trainers;
     TextView goal;
+    TextView account;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class homeActivity extends AppCompatActivity {
         reserve = (TextView) findViewById(R.id.btn1_text);
         trainers = (TextView) findViewById(R.id.btn2_text);
         goal = (TextView) findViewById(R.id.btn3_text);
+        account = (TextView) findViewById(R.id.viewAccount);
 
         reserve.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +47,14 @@ public class homeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(homeActivity.this, goalActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        account.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(homeActivity.this, profilePage.class);
                 startActivity(intent);
             }
         });

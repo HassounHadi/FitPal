@@ -5,6 +5,8 @@
 
     <string name="logIn"><u>Log In!</u></string>
 
+    <string name="viewAccount"><u>View Account</u></string>
+
     <string name="reserve_note">
         Please note that all time slots before 5:00PM or after 11:00PM do not require a reservation and you can walk in at any time.
     </string>
