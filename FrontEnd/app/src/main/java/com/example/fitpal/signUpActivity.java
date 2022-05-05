@@ -43,5 +43,13 @@ public class signUpActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        fname = (EditText) findViewById(R.id.fName);
+        lname = (EditText) findViewById(R.id.lname);
+        pnumber = (EditText) findViewById(R.id.pnumber);
+        email = (EditText) findViewById(R.id.e_mail);
+        username = (EditText) findViewById(R.id.username_sign);
+        password = (EditText) findViewById(R.id.password_sign);
+        c_password = (EditText) findViewById(R.id.password_conf_sign);
     }
 }
