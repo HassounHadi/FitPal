@@ -108,8 +108,27 @@ public class signUpActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(signUpActivity.this, logInActivity.class);
-                startActivity(intent);
+
+                // Checking whether EditText is Empty or Not
+                CheckEditTextIsEmptyOrNot();
+
+                if(CheckEditText){
+
+                    // If EditText is not empty and CheckEditText = True then this block will execute.
+
+                    UserRegisterFunction(F_Name_Holder,L_Name_Holder, EmailHolder, PasswordHolder);
+                    Intent intent = new Intent(signUpActivity.this, logInActivity.class);
+                    startActivity(intent); 
+
+                }
+                else {
+
+                    // If EditText is empty then this block will execute .
+                    Toast.makeText(signUpActivity.this, "Please fill all form fields.", Toast.LENGTH_LONG).show();
+
+                }
+
+
             }
         });
 
@@ -129,6 +148,7 @@ public class signUpActivity extends AppCompatActivity {
         username = (EditText) findViewById(R.id.username_sign);
         password = (EditText) findViewById(R.id.password_sign);
         c_password = (EditText) findViewById(R.id.password_conf_sign);
+
     }
 
 
