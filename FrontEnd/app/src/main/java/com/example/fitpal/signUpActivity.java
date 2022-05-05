@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,6 +21,27 @@ public class signUpActivity extends AppCompatActivity {
     EditText username;
     EditText password;
     EditText c_password;
+    String F_Name_Holder, L_Name_Holder, EmailHolder, PasswordHolder;
+    Boolean CheckEditText ;
+
+
+    public void CheckEditTextIsEmptyOrNot(){
+
+        F_Name_Holder = fname.getText().toString();
+        L_Name_Holder = lname.getText().toString();
+        EmailHolder = email.getText().toString();
+        PasswordHolder = password.getText().toString();
+
+
+        if(TextUtils.isEmpty(F_Name_Holder) || TextUtils.isEmpty(L_Name_Holder) || TextUtils.isEmpty(EmailHolder) || TextUtils.isEmpty(PasswordHolder))
+        {
+            CheckEditText = false;
+        }
+        else {
+            CheckEditText = true ;
+        }
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,4 +74,6 @@ public class signUpActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.password_sign);
         c_password = (EditText) findViewById(R.id.password_conf_sign);
     }
+
+
 }
