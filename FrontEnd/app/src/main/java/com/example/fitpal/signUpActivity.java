@@ -7,11 +7,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class signUpActivity extends AppCompatActivity {
     Button button;
     TextView text;
+    EditText fname;
+    EditText lname;
+    EditText pnumber;
+    EditText email;
+    EditText username;
+    EditText password;
+    EditText c_password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
